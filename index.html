@@ -1,26 +1,100 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#efe0c3">
-  <meta name="description" content="Mâye Pâtissier dijital menü">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f3e6cc" />
+  <meta name="description" content="Mâye Pâtissier dijital menü" />
   <title>Mâye Pâtissier | Menü</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="menu" aria-label="Mâye Pâtissier dijital menü">
-    <section class="menu-page" aria-label="İçecekler">
-      <img src="assets/icecekler.jpeg" alt="Mâye Pâtissier içecekler menüsü" loading="eager">
+  <main class="menu-shell">
+    <header class="brand" aria-labelledby="site-title">
+      <div class="ornament" aria-hidden="true">❦</div>
+      <h1 id="site-title">MÂYE<br><span>PÂTISSIER</span></h1>
+      <p>Dijital Menü</p>
+    </header>
+
+    <nav class="category-nav" aria-label="Menü kategorileri">
+      <a href="#icecekler">İçecekler</a>
+      <a href="#tuzlular">Tuzlular</a>
+      <a href="#tatlilar">Tatlılar</a>
+    </nav>
+
+    <section class="menu-card" id="icecekler">
+      <div class="section-heading">
+        <span></span>
+        <h2>İçecekler</h2>
+        <span></span>
+      </div>
+
+      <h3>Soğuk İçecekler</h3>
+      <ul class="menu-list">
+        <li><span>Su</span><strong>10 ₺</strong></li>
+        <li><span>Sade soda</span><strong>40 ₺</strong></li>
+        <li><span>Limonlu soda</span><strong>40 ₺</strong></li>
+        <li><span>Elmalı soda</span><strong>40 ₺</strong></li>
+        <li><span>Uludağ Limonata <small>(250 ml)</small></span><strong>40 ₺</strong></li>
+        <li><span>Meyve suyu <small>(200 ml)</small></span><strong>20 ₺</strong></li>
+        <li><span>Niğde Gazoz</span><strong>50 ₺</strong></li>
+        <li><span>Sarıyer portakal</span><strong>50 ₺</strong></li>
+        <li><span>Sarıyer cola</span><strong>50 ₺</strong></li>
+      </ul>
+
+      <h3>Sıcak İçecekler</h3>
+      <ul class="menu-list">
+        <li><span>Çay</span><strong>10 ₺</strong></li>
+        <li><span>Türk kahvesi</span><strong>50 ₺</strong></li>
+        <li><span>Filtre Kahve</span><strong>60 ₺</strong></li>
+      </ul>
     </section>
 
-    <section class="menu-page" aria-label="Tuzlular">
-      <img src="assets/tuzlular.jpeg" alt="Mâye Pâtissier tuzlular menüsü" loading="lazy">
+    <section class="menu-card" id="tuzlular">
+      <div class="section-heading">
+        <span></span>
+        <h2>Tuzlular</h2>
+        <span></span>
+      </div>
+
+      <ul class="menu-list spacious">
+        <li><span>Tuzlu peynirli mini tart <small>(porsiyon 4 adet)</small></span><strong>200 ₺</strong></li>
+        <li><span>Mahlepli Kurabiye <small>(porsiyon 4 adet)</small></span><strong>200 ₺</strong></li>
+        <li><span>Tuzlu mini mayasız poğaça <small>(porsiyon 4 adet)</small></span><strong>200 ₺</strong></li>
+        <li><span>Patatesli Börek <small>(porsiyon 4 adet)</small></span><strong>150 ₺</strong></li>
+        <li><span>Peynirli Börek <small>(porsiyon 4 adet)</small></span><strong>150 ₺</strong></li>
+        <li><span>Tost <small>(Kaşar / Beyaz Peynirli)</small></span><strong>100 ₺</strong></li>
+      </ul>
     </section>
 
-    <section class="menu-page" aria-label="Tatlılar">
-      <img src="assets/tatlilar.jpeg" alt="Mâye Pâtissier tatlılar menüsü" loading="lazy">
+    <section class="menu-card" id="tatlilar">
+      <div class="section-heading">
+        <span></span>
+        <h2>Tatlılar</h2>
+        <span></span>
+      </div>
+
+      <ul class="menu-list spacious">
+        <li><span>Profiterol <small>(porsiyon)</small></span><strong>350 ₺</strong></li>
+        <li><span>Brownie <small>(porsiyon)</small></span><strong>300 ₺</strong></li>
+        <li><span>Depresyon Tatlısı</span><strong>350 $</strong></li>
+        <li><span>Terapi Seansı</span><strong>350 ₺</strong></li>
+        <li><span>Kırmızı Alarm</span><strong>350 ₺</strong></li>
+        <li><span>Takıntı</span><strong>350 ₺</strong></li>
+        <li><span>Sarı reçete</span><strong>300 ₺</strong></li>
+        <li><span>Butik Tasarım Kurabiye <small>(adet)</small></span><strong>100 ₺</strong></li>
+      </ul>
     </section>
+
+    <footer>
+      <div aria-hidden="true">♥</div>
+      <p>Afiyet olsun</p>
+    </footer>
   </main>
 </body>
 </html>
