@@ -189,8 +189,8 @@ h3::after {
 
 .menu-list li {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: end;
+  grid-template-columns: minmax(0, auto) minmax(24px, 1fr) auto;
+  align-items: start;
   gap: 8px;
   padding: 7px 0;
   font-size: clamp(1.15rem, 4.8vw, 1.55rem);
@@ -202,29 +202,27 @@ h3::after {
 
 .menu-list li span {
   min-width: 0;
-}
-
-.menu-list li span::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .menu-list li::after {
   content: "";
   grid-column: 2;
   grid-row: 1;
-  align-self: center;
+  align-self: start;
+  margin-top: .82em;
   border-bottom: 2px dotted rgba(75, 42, 18, .72);
-  transform: translateY(-3px);
 }
 
 .menu-list strong {
   grid-column: 3;
   grid-row: 1;
+  align-self: start;
   white-space: nowrap;
   color: var(--ink);
   font-weight: 600;
+  line-height: 1.35;
 }
 
 .menu-list small {
@@ -275,8 +273,8 @@ footer p {
   }
 
   .menu-list small {
-    display: block;
-    margin-top: 1px;
+    display: inline;
+    margin-top: 0;
   }
 }
 
